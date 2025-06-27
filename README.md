@@ -186,6 +186,11 @@ Contact the developers and community on the [mailing lists](https://flink.apache
 The documentation of Apache Flink is located on the website: [https://flink.apache.org](https://flink.apache.org)
 or in the `docs/` directory of the source code.
 
+## Watermark
+Strategy.<YourType>forBoundedOutOfOrderness(Duration.ofSeconds(5))
+    .withTimestampAssigner((event, timestamp) -> event.getTimestamp());
+
+
 
 ## Fork and Contribute
 
